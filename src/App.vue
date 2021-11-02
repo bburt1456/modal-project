@@ -1,5 +1,5 @@
 <template>
-  <h3>{{ title }}</h3>
+  <h1>{{ title }}</h1>
 </template>
 
 <script>
@@ -22,5 +22,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h1 {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  padding-bottom:10px;
 }
 </style>
