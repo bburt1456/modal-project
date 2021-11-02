@@ -1,16 +1,17 @@
 <template>
-  <h3>My First Vue App</h3>
+  <h3>{{ title }}</h3>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return{ 
+      title: 'My First Vue App :)'
+    }
   }
 }
+
 </script>
 
 <style>
