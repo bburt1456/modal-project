@@ -17,14 +17,13 @@ export default {
       showModal: false
     }
   }
- /* , methods: {
-    handleClick(){
-      console.log(this.$refs.name)
-      this.$refs.name.classList.add('active')
-      this.$refs.name.focus()
-    }
-  }*/
-}
+ , methods: {
+   toggleModal(){
+     this.showModal = !this.showModal
+     }
+   }
+ }
+
 //You should split your apps into different components, to make your project modular and reusable with your different components.
 </script>
 
