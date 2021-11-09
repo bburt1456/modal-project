@@ -1,6 +1,8 @@
 <template>
   <h1>{{ title }}</h1>
- <Modal header="Sign up for the Giveaway!" />
+ <div v-if="showModal">
+   <Modal header="Sign up for the Giveaway!"/>
+ </div>
 </template>
 
 <script>
@@ -11,7 +13,8 @@ export default {
   components: { Modal },
   data() {    
     return{ 
-      title: 'My First Vue App :)'
+      title: 'My First Vue App :)',
+      showModal: false
     }
   }
  /* , methods: {
