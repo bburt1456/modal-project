@@ -3,6 +3,7 @@
  <div v-if="showModal">
    <Modal header="Sign up for the Giveaway!"/>
  </div>
+ <button @click.shift="toggleModal">open modal</button>
 </template>
 
 <script>
