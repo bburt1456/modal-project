@@ -1,8 +1,7 @@
 <template>
-    <div class="backdrop">
-        <div class="modal">
-            <h1> {{ header }} </h1>
-            <p>modal content</p>
+    <div class="backdrop" @click.self="closeModal">
+        <div class="modal" :class="{ sale: theme === 'sale' }">
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -10,6 +9,7 @@
 export default {
     props: ['header']
 }
+
 </script>
 
 <style>
